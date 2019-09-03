@@ -12,3 +12,5 @@ PowerShell script to automate Skype For Business Deployment
 ## Post-installation steps 
 - Check simple URLs (shoulde be configured during script execution) 
 - Add additional FE/Edge, change SQL AlwaysOn Listener if it is necessary
+
+Please note: create, tested and verified in far 2016. However, I'm pretty sure the script work with later SfB versions (some minor change might be required though). Happy deployment and thanks for stars.
