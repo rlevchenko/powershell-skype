@@ -1,4 +1,4 @@
-# PowerShell - Skype For Business
+## PowerShell - Skype For Business
 PowerShell script to automate Skype For Business Deployment
 - Enterprise topology with 1 FE, Office Web Apps
 - Backend is SQL Server 2012 with Always-On (some manual operations are required after deployment)
