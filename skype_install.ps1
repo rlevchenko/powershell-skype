@@ -5,7 +5,7 @@
        Enterprise topology with 1 FE, Office Web Apps
        Backend is SQL Server 2012 with Always-On (some manual operations are required after deployment)
        All roles except of roles for Enterprise Voice (mediation and etc) are on FE
-       + update June, 2015 get installed at the end of script. you can upload newest SkypeFB updates installer to prereqs folder.
+       + update get installed at the end of script. you can upload newest SkypeFB updates installer to prereqs folder.
 .NOTES
        Name: SFB
        Author : Roman Levchenko
