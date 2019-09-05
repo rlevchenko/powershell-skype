@@ -46,6 +46,13 @@ Get-Partition -DiskNumber $disk.Number | Format-Volume -FileSystem NTFS -Force -
 #install required KB
 & C:\SkypeSource\prereqs\KB.MSU /quiet
 
+<# Install the additional preprequisites 
+cmd /c "SkypeFiles\Setup\amd64\setup\ocscore.msi" /q
+cmd /c "SkypeFiles\Setup\amd64\vcredist_x64.exe" /q
+cmd /c "SkypeFiles\Setup\amd64\setup\admintools.msi" /q
+cmd /c "SkypeFiles\Setup\amd64\SQLSysClrTypes.msi" /q
+#>
+
 #Prepare AD to Skype
 Install-CSAdServerSchema -Confirm:$false -Verbose -Report "C:\SkypeSource\logs\Install-CSAdServerSchema.html" | Out-Null
 #cannot update forest with lync extensions "directory object not found". additional parameters and force wait are needed
