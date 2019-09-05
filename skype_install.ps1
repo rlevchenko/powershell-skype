@@ -47,10 +47,10 @@ Get-Partition -DiskNumber $disk.Number | Format-Volume -FileSystem NTFS -Force -
 & C:\SkypeSource\prereqs\KB.MSU /quiet
 
 <# Install the additional preprequisites 
-cmd /c "SkypeFiles\Setup\amd64\setup\ocscore.msi" /q
-cmd /c "SkypeFiles\Setup\amd64\vcredist_x64.exe" /q
-cmd /c "SkypeFiles\Setup\amd64\setup\admintools.msi" /q
-cmd /c "SkypeFiles\Setup\amd64\SQLSysClrTypes.msi" /q
+.. "SkypeFiles\Setup\amd64\setup\ocscore.msi" /q
+.. "SkypeFiles\Setup\amd64\vcredist_x64.exe" /q
+.. "SkypeFiles\Setup\amd64\setup\admintools.msi" /q
+.. "SkypeFiles\Setup\amd64\SQLSysClrTypes.msi" /q
 #>
 
 #Prepare AD to Skype
